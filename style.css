@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272643;
+}
+
+.main {
+    /* border: 1px solid #fff; */
+    width: 55rem;
+    margin: 3rem;
+}
+
+.main h1 {
+    font-size: 3.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.main > p {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.main .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.main .grid h6 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.908);
+}
+
+.main .grid .item {
+    text-align: center;
+    padding: 1.5rem;
+    margin: .5rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.main .grid .item:hover {
+    background-color: #2c698d;
+}
+
+.main .grid .item img {
+    width: 3rem;
+    margin: 1rem;
+}
+
+.main form{
+    background-color: #fff;
+    width: 100%;
+    padding: 3rem;
+    color: #272643;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.main form .contai {
+    display: flex;
+    column-gap: 4rem;
+    margin-top: 3.5rem;
+}
+
+.main form input {
+    display: block;
+    border: 2px solid #27264301;
+    padding: 1.4rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    background-color: #27264309;
+    transition: .3s;
+    width: 100%;
+}
+
+.main form input:focus {
+    border: 2px solid #2c698d;
+    background-color: #fff;
+}
+
+
+.main form h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.main form label {
+    font-size: 1.5rem;
+}
+
+.main form .right textarea{
+    width: 100%;
+    display: block;
+    border: 2px solid #27264301;
+    padding: 1.4rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    background-color: #27264309;
+    transition: .3s;
+    resize: none;
+    height: 85%;
+}
+
+.main form .right textarea:focus {
+    border: 2px solid #2c698d;
+    background-color: #fff;
+}
+
+.main form .right textarea:focus::placeholder {
+    color: transparent;
+}
+
+.main form .right {
+    flex: 1 1 50%;
+}
+
+.main form .left {
+    flex: 1 1 50%;
+}
+
+.main form .bottom {
+    margin-top: 1rem;
+}
+
+.main form .bottom .button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    column-gap: 1rem;
+}
+
+.main form .bottom .button button {
+    padding: 1rem 1.7rem;
+    border-radius: 6px;
+    background-color: #27264309;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border: 2px solid #27264301;
+    transition: .3s;
+}
+
+.main form .bottom .button button:hover {
+    border: 2px solid #2c698d;
+    color: #2c698d;
+    background-color: #fff;
+}
+
+.main form .footer {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.main form .footer button {
+    padding: 1.5rem 4rem;
+    border-radius: 7px;
+    background-color: #2c698d;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 2px solid #2c698d;
+    transition: .3s;
+}
+
+.main form .footer button:hover {
+    background-color: #fff;
+    color: #2c698d;
+    font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+}
